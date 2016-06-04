@@ -16,13 +16,19 @@ var params = [
 params.forEach(function(param) {
   test('options: ' + param + ' param', function (t) {
     t.plan(3);
+
+    var opts1    = {};
+    var opts2    = {};
+    opts1[param] = true;
+    opts2[param] = 'true';
+
     t.notEquals(
-      options({[ param ] : true }).indexOf('--' + param),
+      options(opts1).indexOf('--' + param),
       -1,
       'must accept boolean values'
     );
     t.equals(
-      options({[ param ] : 'true' }).indexOf('--' + param),
+      options(opts2).indexOf('--' + param),
       -1,
       'must reject non-boolean values'
     );
