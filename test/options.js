@@ -1,5 +1,5 @@
-const options    = require('../options');
-const test       = require('tape');
+const options = require('../options');
+const test    = require('tape');
 
 // valid params 
 var params = [
