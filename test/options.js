@@ -14,7 +14,7 @@ var params = [
 
 // iterate through the valid params, asserting that each is respected
 params.forEach(function(param) {
-  test(`options: '${param}' param`, function (t) {
+  test('options: ' + param + ' param', function (t) {
     t.plan(3);
     t.notEquals(
       options({[ param ] : true }).indexOf('--' + param),
@@ -79,7 +79,7 @@ test("options: 'size' param", function (t) {
 
 // Support both a `files` and `file` param for the sake of ease-of-use
 [ 'files', 'file' ].forEach(function(paramName) {
-  test(`options: '${paramName}' param`, function (t) {
+  test('options: ' + paramName + ' param', function (t) {
     t.plan(5);
     t.notEquals(
       options({ files: '/tmp/foo' }).indexOf('/tmp/foo')
