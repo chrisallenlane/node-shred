@@ -1,0 +1,34 @@
+{
+  "name": "node-shred",
+  "version": "1.0.0",
+  "description": "A node wrapper for shred.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape 'test/*.js' | faucet",
+    "lint": "jshint . --exclude=/node_modules"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "laxbreak": true
+  },
+  "author": "Chris Allen Lane <chris@chris-allen-lane.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "jshint": "^2.9.2",
+    "tape": "^4.5.1",
+    "tmp": "0.0.28"
+  },
+  "dependencies": {
+    "shelly": "0.0.3"
+  },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisallenlane/node-shred.git"
+  },
+  "keywords": [
+    "security",
+    "shred"
+  ]
+}
+
