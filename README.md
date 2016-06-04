@@ -1,7 +1,8 @@
 node-shred
 ==========
 [![Travis branch](https://img.shields.io/travis/chrisallenlane/node-shred/master.svg)]()
-[![npm](https://img.shields.io/npm/chrisallenlane/node-shred.svg)]()
+[![npm](https://img.shields.io/npm/v/node-shred.svg)]()
+[![npm](https://img.shields.io/npm/dt/node-shred.svg)]()
 
 `node-shred` is a thin wrapper around the `shred` shell utility.
 
